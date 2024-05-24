@@ -3,11 +3,14 @@ import styles from './DeviceCard.module.css';
 import { DeviceCardProps } from './DeviceCard.props';
 import { MemoryPriceProps } from './MemoryPrice.props';
 import cn from 'classnames';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../redux/store';
+import { cartActions } from '../../redux/slices/cart.slice';
 
 export default function DeviceCard(props:DeviceCardProps){
 
     const [price, setPrice] = useState<number>(props.memoryPrice[0].price)
-
+    const dispatch = useDispatch<AppDispatch>()
 
     return (
         <div className={styles['card']}>
@@ -20,8 +23,8 @@ export default function DeviceCard(props:DeviceCardProps){
             </div>
            
            <div className={styles['container']}>
-             <div className={styles['price']}>{price + ' ₽'}</div>
-             <div className={styles['addCart']}>Добавить</div>
+             <div className={styles['price']}>{price}&nbsp;₽</div>
+             <div onClick={()=> dispatch(cartActions.add( {id: props.id, memory: props.memoryPrice.filter( el => el.price == price)[0].memory} ))} className={styles['addCart']}>Добавить</div>
            </div>
         </div>
     )

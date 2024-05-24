@@ -1,18 +1,32 @@
 
 
+.category::-webkit-scrollbar {
+    display: none;
+}
+
 .category{
     display: flex;
+    align-items: center;
+    padding: 3px;
     gap: 8px;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-right: 7px;
+    /* background-color: antiquewhite; */
+    border-radius: 20px;
+    border: 1px solid rgb(236, 235, 235);;
 }
 
 .li{
+    white-space:nowrap;
     cursor: pointer;
     display: block;
     border-radius: 20px;
     padding: 13px 20px;
     background-color: rgb(249, 249, 249);
     transition: all .3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .active{
@@ -20,6 +34,18 @@
     color: aliceblue;
 }
 
-@media(max-width: 455px){
+@media(max-width: 600px){
+    .li{
+        font-size: 12px;
+        padding: 10px 10px;
+        height: 18px;
+    }
+}
 
+@media(max-width: 370px) {
+    .li {
+        font-size: 11px;
+        padding: 8px 8px;
+        height: 14px;
+    }
 }

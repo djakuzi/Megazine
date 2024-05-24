@@ -9,6 +9,7 @@
     border-radius: 15px;
     height: calc(100vh - 160px);
     opacity: 0.96;
+    border: .1px solid black;
 }
 
 .header{
@@ -25,6 +26,7 @@
     /* max-width: 100px; */
     display: flex;
     gap: 5px;
+    -webkit-tap-highlight-color: transparent;
     
 }
 
@@ -140,6 +142,18 @@
     .box-txt {
         display: none;
     }
+}
+
+@media (max-width: 444px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(247, 247, 247);
+        margin-bottom: 15px;
+    }
+    
 }
 
 

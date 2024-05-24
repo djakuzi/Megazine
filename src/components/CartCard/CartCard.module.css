@@ -1,12 +1,12 @@
 
 .line{
     border: 1px solid rgb(244, 244, 244);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .cart{
     display: flex;
-    margin-bottom: 30px;
+    align-items: center;
 }
 
 .cart:last-child{
@@ -15,17 +15,30 @@
 
 
 .img{
-    background-image: url('https://www.phonedo.ru/wp-content/uploads/2021/10/17-1-200x267.png');
     height: 80px;
     width: 80px;
+    min-height: 80px;
+    min-width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+
+
+.container{
+    width: 250px;
+}
+
 .name{
     color: rgb(0, 0, 0);
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
     line-height: -1px;
     letter-spacing: 1%;
     text-align: left;
@@ -40,15 +53,34 @@
     text-align: left;
 }
 
+.wrapper{
+    width: 210px;
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .action{
     display: flex;
     align-items: center;
     gap: 5px;
+    
+}
+
+.action img{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.action img:hover{
+    transform: scale(1.05);
 }
 
 .count{
     color: rgb(0, 0, 0);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: -1px;
     letter-spacing: 1%;
@@ -56,5 +88,99 @@
 }
 
 .price{
+    padding: 0px 10px;
+}
 
+.delete{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.delete:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 670px){
+
+    .img {
+        height: 150px;
+        width: 150px;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .cart{
+        justify-content: space-between;
+    }
+
+    .box{
+        width: auto;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .wrapper{
+        margin-left: 0;
+        align-self: start;
+    }
+}
+
+@media(max-width: 490px){
+
+    .img {
+        height: 80px;
+        width: 80px;
+        min-height: 80px;
+        min-width: 80px;
+    }
+    .name {
+        font-size: 16px;
+    }
+
+    .memory {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 422px) {
+
+    .line {
+        margin-bottom: 10px;
+    }
+
+
+    .cart{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .cart:last-child {
+        margin-bottom: 15px
+    }
+
+    .img {
+        display: block;
+        height: 120px;
+        width: 120px;
+        min-height: 120px;
+        min-width: 120px;
+        padding: 0;
+        background-position: center;
+    }
+
+
+    .name {
+       text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .memory{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+   
+
+    .wrapper{
+        margin: 0 auto;
+    }
 }

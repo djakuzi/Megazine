@@ -2,7 +2,7 @@ import styles from './Category.module.css';
 import cn from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../redux/store';
-import { cartActions } from '../../redux/slices/category.slice';
+import { categoryActions } from '../../redux/slices/category.slice';
 
 
 export default function Category(){
@@ -14,7 +14,7 @@ export default function Category(){
         <div className={styles['category']}>
 
             {categorySlice.title.map( (el, i) => {
-                return <li onClick={() => dispatch(cartActions.changeCategory(i))} key={i} className={ cn(styles['li'], {
+                return <li onClick={() => dispatch(categoryActions.changeCategory(i))} key={i} className={ cn(styles['li'], {
                     [styles.active]: i == categorySlice.id
                 })} >{el}</li>
             })}

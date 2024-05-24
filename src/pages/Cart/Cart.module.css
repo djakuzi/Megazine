@@ -8,6 +8,7 @@
 .header{
     display: flex;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 
@@ -65,3 +66,79 @@
     color: rgb(254, 95, 30);
 }
 
+
+@media(max-width: 600px){
+
+    .quantity {
+        font-size: 16px;
+    }
+    .sum{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .header img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-left: 4px;
+    }
+
+    .clear{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+    .quantity {
+        font-size: 12px;
+    }
+
+    .sum {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 370px) {
+
+    .header {
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 17px;
+    }   
+
+    .clear {
+        font-size: 11px;
+    }
+
+    .info{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .quantity {
+        font-size: 15px;
+    }
+
+    .sum {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 320px){
+        
+    .title {
+            font-size: 15px;
+        }
+    
+        .clear {
+            font-size: 9px;
+        }
+}

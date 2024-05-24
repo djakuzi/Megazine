@@ -25,5 +25,5 @@ export const categorySlice = createSlice({
 
 
 export default categorySlice.reducer
-export const cartActions = categorySlice.actions
+export const categoryActions = categorySlice.actions
 
