@@ -16,9 +16,9 @@ export default function Megazine(){
         const data = localStorage.getItem('start')
 
         if (!data) {
-            navigate('/megazine/start')
+            navigate('/Megazine/start')
         } else if (data)(
-            navigate('/megazine/show/menu')
+            navigate('/Megazine/show/menu')
         )
     }
 

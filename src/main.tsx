@@ -17,7 +17,7 @@ const Cart = lazy( ()=>import('./pages/Cart/Cart'))
 
 const Router = createBrowserRouter([
   {
-    path: '/megazine',
+    path: '/Megazine',
     element: <Megazine/>,
      children: [
       {

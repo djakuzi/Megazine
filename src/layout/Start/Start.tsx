@@ -8,8 +8,8 @@ export default function Start(){
    const clickStart = () => {
     
     localStorage.setItem('start', 'true')
-    // startTransition( () =>  navigate('/megazine/show/menu') )
-    navigate('/megazine/show/menu')
+    // startTransition( () =>  navigate('/Megazine/show/menu') )
+    navigate('/Megazine/show/menu')
 
    }
 

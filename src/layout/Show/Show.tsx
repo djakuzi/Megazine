@@ -32,7 +32,7 @@ export default function Show(){
 
                     <div className={styles['header']}>
                         
-                        <Link className={styles["header__link"]} to={'/megazine/show/menu'}>
+                        <Link className={styles["header__link"]} to={'/Megazine/show/menu'}>
 
                             <div className={styles['logo']}>
                                 <img  src={logoIMG} alt="лого" />
@@ -47,7 +47,7 @@ export default function Show(){
 
                     <NavLink className={ ({isActive}) => cn(styles['cart__link'],{
                             [styles.active]: isActive,
-                        })} to="/megazine/show/cart">
+                        })} to="/Megazine/show/cart">
 
                             <div className={styles['price']}>520 ₽</div>
                             <div className={styles['line']}></div>
