@@ -1,0 +1,60 @@
+
+.line{
+    border: 1px solid rgb(244, 244, 244);
+    margin-bottom: 30px;
+}
+
+.cart{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.cart:last-child{
+    margin-bottom: 30px
+}
+
+
+.img{
+    background-image: url('https://www.phonedo.ru/wp-content/uploads/2021/10/17-1-200x267.png');
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.memory{
+    color: rgb(141, 141, 141);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.count{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.price{
+
+}

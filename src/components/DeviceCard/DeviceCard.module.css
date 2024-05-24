@@ -1,0 +1,119 @@
+
+.card{
+    /* max-width: 280px; */
+    /* border-radius: 15px; */
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.image{
+    margin: 0 auto;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: antiquewhite; */
+}
+
+.name{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* font-family: Proxima Nova; */
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.color {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* font-family: Proxima Nova; */
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.memoryPrice{
+    margin: 0 auto;
+    max-width: 300px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: rgb(243, 243, 243);
+    border: 5px solid rgb(243, 243, 243);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.memoryPrice__item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+.memoryPrice div{
+    width: 100%;
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.active{
+    background-color: rgba(255, 255, 255)
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.addCart{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid rgb(218, 10, 10);
+    border-radius: 30px;
+    padding: 7px 13px;
+    color: rgb(218, 10, 10);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: 0%;
+    transition: all .3s ease;
+    text-align: center;
+    
+}
+
+.addCart:hover{
+    background-color: rgb(218, 10, 10);
+    color: white;
+   
+}
+
+.addCart::before{
+    content: '+ ';
+    font-weight: 700;
+    /* position: absolute; */
+    transform: translate(-2px, -3px);
+}
+

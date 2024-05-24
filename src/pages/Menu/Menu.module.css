@@ -1,0 +1,41 @@
+
+.menu{
+    margin-top: 40px;
+}
+
+.action{
+    /* background-color: antiquewhite; */
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    /* font-family: Proxima Nova; */
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 31px;
+}
+
+.noLoading{
+    display: flex;
+   justify-content: center;
+}
+
+.loading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skeleton{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
+}
+
+@media(max-width:530px){
+    .title{
+        font-size: 26px;
+    }
+}

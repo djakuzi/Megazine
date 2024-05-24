@@ -1,0 +1,25 @@
+
+
+.category{
+    display: flex;
+    gap: 8px;
+    overflow: scroll;
+}
+
+.li{
+    cursor: pointer;
+    display: block;
+    border-radius: 20px;
+    padding: 13px 20px;
+    background-color: rgb(249, 249, 249);
+    transition: all .3s ease;
+}
+
+.active{
+    background: rgb(40, 40, 40);
+    color: aliceblue;
+}
+
+@media(max-width: 455px){
+
+}

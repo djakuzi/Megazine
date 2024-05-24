@@ -1,0 +1,306 @@
+{
+    "device":[
+        {
+            "id": 1,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 13",
+            "color": "темная ночь",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2021/10/21.png",
+            "memoryPrice": [ {
+                "price": 57000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 60000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 65000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A15 Bionic", "SIM-карты: 2 (nano SIM+eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth 5.0","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 173 г"]
+            
+        },
+        {
+            "id": 2,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 13",
+            "color": "розовый",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2021/10/17-1.png",
+            "memoryPrice": [ {
+                "price": 57000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 60000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 65000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A15 Bionic", "SIM-карты: 2 (nano SIM+eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth 5.0","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 173 г"]
+            
+        },
+        {
+            "id": 3,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 13",
+            "color": "синий",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2021/10/18-1.png",
+            "memoryPrice": [ {
+                "price": 57000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 60000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 65000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A15 Bionic", "SIM-карты: 2 (nano SIM+eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth 5.0","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 173 г"]
+            
+        },
+        {
+            "id": 4,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 13",
+            "color": "сияющая звезда",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2021/10/19.png",
+            "memoryPrice": [ {
+                "price": 57000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 60000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 65000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A15 Bionic", "SIM-карты: 2 (nano SIM+eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth 5.0","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 173 г"]
+            
+        },
+        {
+            "id": 5,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 13",
+            "color": "альпийский зеленый",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2022/05/1-3.png",
+            "memoryPrice": [ {
+                "price": 57000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 60000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 65000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A15 Bionic", "SIM-карты: 2 (nano SIM+eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth 5.0","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 173 г"]
+            
+        },
+        {
+            "id": 6,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 14",
+            "color": "фиолетовый",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2022/09/13.png",
+            "memoryPrice": [ {
+                "price": 60000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 65000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 70000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)OLED", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A16 Bionic", "SIM-карты: 2 (eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 172 г"]
+            
+        },
+        {
+            "id": 7,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 14",
+            "color": "темная ночь",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2022/09/11.png",
+           "memoryPrice": [ {
+                "price": 60000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 65000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 70000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)OLED", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A16 Bionic", "SIM-карты: 2 (eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 172 г"]
+           
+        },
+        {
+            "id": 8,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 14",
+            "color": "синий",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2022/09/15.png",
+            "memoryPrice": [ {
+                "price": 60000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 65000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 70000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)OLED", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A16 Bionic", "SIM-карты: 2 (eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 172 г"]
+        },
+        {
+            "id": 9,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 14",
+            "color": "сияющая звезда",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2021/10/19.png",
+            "memoryPrice": [ {
+                "price": 60000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 65000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 70000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)OLED", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A16 Bionic", "SIM-карты: 2 (eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 172 г"]
+        },
+        {
+            "id": 10,
+            "idDevice": 1,
+            "category": "phone",
+            "name": "Apple iPhone 14",
+            "color": "черный",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2023/09/1.png",
+            "memoryPrice": [ {
+                "price": 60000,
+                "memory": "64 ГБ"
+            },
+            {
+                "price": 65000,
+                "memory": "128 ГБ"
+            }, 
+            {
+                "price": 70000,
+                "memory": "256 ГБ"
+            }],
+            "characteristics": ["экран: 6.1″ (2532×1170)OLED", "оперативная память: 4 ГБ", "двойная камера: 12 МП, 12 МП","процессор: Apple A16 Bionic", "SIM-карты: 2 (eSIM)", "операционная система: iOS 15", "беспроводные интерфейсы: NFC, Wi-Fi, Bluetooth","интернет: 4G LTE, 5G", "степень защиты: IP68", "вес: 172 г"]
+        },
+        
+        {
+            "id": 11,
+            "idDevice": 2,
+            "category": "laptop",
+            "name": "Ноутбук Apple MacBook Air 13 Late 2020 (Apple M1)",
+            "color": "Gold",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2020/12/115-1.png",
+            "memoryPrice": [ {
+                "price": 95000,
+                "memory": "256 ГБ"
+            },
+            {
+                "price": 110000,
+                "memory": "512 ГБ"
+            }, 
+            {
+                "price": 120000,
+                "memory": "1 ТБ"
+            }],
+            "characteristics": ["процессор: Apple M1", "объем оперативной памяти: 8 ГБ", "накопитель: SSD 256 ГБ", "встроенная видеокарта: Apple graphics 8-core, Apple graphics 7-core", "экран: 13.3″ (2560×1600)","IPS матрица", "время работы от аккумулятора: 18 ч", "операционная система: macOS", "микрофон/наушники Combo, Thunderbolt/USB 4 x 2", "Wi-Fi, Bluetooth", "pазмеры: 304.1×212.4×16.1 мм", "вес: 1.29 кг"]
+        },
+        {
+            "id": 12,
+            "idDevice": 2,
+            "category": "laptop",
+            "name": "Ноутбук Apple MacBook Air 13 Late 2020 (Apple M1)",
+            "color": "Silver",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2020/12/116-1.png",
+            "memoryPrice": [ {
+                "price": 95000,
+                "memory": "256 ГБ"
+            },
+            {
+                "price": 110000,
+                "memory": "512 ГБ"
+            }, 
+            {
+                "price": 120000,
+                "memory": "1 ТБ"
+            }],
+            "characteristics": ["процессор: Apple M1", "объем оперативной памяти: 8 ГБ", "накопитель: SSD 256 ГБ", "встроенная видеокарта: Apple graphics 8-core, Apple graphics 7-core", "экран: 13.3″ (2560×1600)","IPS матрица", "время работы от аккумулятора: 18 ч", "операционная система: macOS", "микрофон/наушники Combo, Thunderbolt/USB 4 x 2", "Wi-Fi, Bluetooth", "pазмеры: 304.1×212.4×16.1 мм", "вес: 1.29 кг"]
+        },
+        {
+            "id": 13,
+            "idDevice": 2,
+            "category": "laptop",
+            "name": "Ноутбук Apple MacBook Air 13 Late 2020 (Apple M1)",
+            "color": "Grey",
+            "image": "https://www.phonedo.ru/wp-content/uploads/2020/12/113-1.png",
+            "memoryPrice": [ {
+                "price": 95000,
+                "memory": "256 ГБ"
+            },
+            {
+                "price": 110000,
+                "memory": "512 ГБ"
+            }, 
+            {
+                "price": 120000,
+                "memory": "1 ТБ"
+            }],
+            "characteristics": ["процессор: Apple M1", "объем оперативной памяти: 8 ГБ", "накопитель: SSD 256 ГБ", "встроенная видеокарта: Apple graphics 8-core, Apple graphics 7-core", "экран: 13.3″ (2560×1600)","IPS матрица", "время работы от аккумулятора: 18 ч", "операционная система: macOS", "микрофон/наушники Combo, Thunderbolt/USB 4 x 2", "Wi-Fi, Bluetooth", "pазмеры: 304.1×212.4×16.1 мм", "вес: 1.29 кг"]
+        },
+        {
+            "id": 14,
+            "idDevice": 2,
+            "category": "laptop",
+            "name": "",
+            "color": "",
+            "image": "",
+            "memory": ["256 ГБ", "512 ГБ", "1 ТБ"],
+            "characteristics": [],
+            "price": 118000
+        },
+        {
+            "id": 1123213213,
+            "category": "",
+            "name": "",
+            "color": "",
+            "image": "",
+            "memory": [],
+            "characteristics": [],
+            "price": 95000
+        }
+    ]
+}

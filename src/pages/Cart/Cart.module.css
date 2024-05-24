@@ -1,0 +1,67 @@
+
+.cart {
+    max-width: 820px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+
+.header{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-left: 9px;
+}
+
+.clear{
+    color: rgb(182, 182, 182);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    margin-left: 5px;
+
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity{
+    font-size: 22px;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.quantity span{
+    font-weight: 700;
+}
+
+.sum{
+    font-size: 22px;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.sum span{
+    font-weight: 700;
+    color: rgb(254, 95, 30);
+}
+

@@ -1,0 +1,145 @@
+
+.show{
+    position: relative;
+    overflow: scroll;
+    max-width: 1260px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: calc(100vh - 160px);
+    opacity: 0.96;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(247, 247, 247);
+    margin-bottom: 40px;
+}
+
+.header__link{
+    /* background-color: antiquewhite; */
+    /* max-width: 100px; */
+    display: flex;
+    gap: 5px;
+    
+}
+
+.logo{
+    width: 55px;
+    /* height: 10px; */
+}
+
+.logo img{
+    display: block;
+    width: 100%;
+}
+
+.box-txt{
+    margin-top: 5px;
+}
+
+.name{
+    width: 154px;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+    /* font-weight: 400; */
+    text-transform: uppercase;
+}
+
+.title{
+    width: 200px;
+    color: rgb(123, 123, 123);
+    font-size: 16px;
+    /* font-weight: 400; */
+}
+
+.cart__link{
+    width: 104px;
+    padding: 15px 23px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(254, 95, 30); */
+    background-color: rgb(218, 10, 10);
+    
+    /* background-color: rgb(249, 249, 249); */
+    transition: all .3s ease;
+}
+
+.active{
+    display: none;
+}
+
+.cart__link:hover{
+    background-color: rgb(70, 50, 42);
+}
+
+.price{
+    color: rgb(255, 255, 255);
+    /* color: black; */
+    /* font-family: Proxima Nova; */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.line{
+    width: 1px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.box-items{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.box-items img{
+
+}
+
+.q {
+    color: rgb(255, 255, 255);
+    /* font-family: Proxima Nova; */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media(max-width: 1355px){
+    .show{
+        height: calc(100vh - 140px);
+    }   
+}
+
+@media(max-width:530px){
+
+    .show{
+        padding: 30px;
+        height: calc(100vh - 115px);
+    }
+
+    .name{
+        width: 120px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .title{
+        width: 150px;
+        font-size: 12px;
+    }
+   
+}
+
+@media(max-width: 450px){
+    .box-txt {
+        display: none;
+    }
+}
+
+

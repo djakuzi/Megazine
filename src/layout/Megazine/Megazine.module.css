@@ -1,0 +1,15 @@
+
+.megazine{
+    /* background: rgb(255, 201, 92); */
+    background-color: black;
+    padding: 40px 0px;
+    height: 100vh;
+    background-size: 20%;
+}
+
+@media(max-width: 1355px){
+    .megazine{
+        padding: 30px 15px;
+    }
+}
+

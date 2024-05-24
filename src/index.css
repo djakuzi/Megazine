@@ -1,0 +1,21 @@
+:root {
+  --animation-start-box-shadow: rgb(0, 0, 0);
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+/* pagination */
+.selected a { 
+  background-color: rgb(218, 10, 10) !important; 
+  color: white;
+  transform: scale(0.9);
+}
