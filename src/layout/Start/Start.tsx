@@ -1,11 +1,9 @@
-import { useTransition } from 'react';
 import {useNavigate} from 'react-router-dom';
 import styles from './Start.module.css';
 
 export default function Start(){
 
    const navigate = useNavigate()
-   const [isPending, startTransition] = useTransition()
 
    const clickStart = () => {
     
