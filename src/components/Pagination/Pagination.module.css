@@ -64,3 +64,9 @@
         top: calc(100vh - 41px);
     }
 }
+
+@media(max-width:500px) {
+    .paginate {
+        top: calc(100vh - 61px);
+    }
+}

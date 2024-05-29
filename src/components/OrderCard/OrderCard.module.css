@@ -1,0 +1,26 @@
+
+.orderList{
+    margin-bottom: 15px;
+}
+
+.orderInfo{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgba(222, 222, 222, 0.43);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.active{
+    background-color: rgb(222, 222, 222);
+}
+
+@media(max-width: 420px) {
+    .orderInfo{
+        font-size: 14px;
+        gap: 8px;
+    }
+}
+

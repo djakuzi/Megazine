@@ -5,7 +5,7 @@ import { DeviceCardProps } from '../../components/DeviceCard/DeviceCard.props';
 import styles from './Menu.module.css';
 import axios, { AxiosError } from 'axios';
 import PREFIX from '../../helper/PREFIX';
-import DeviceSkeleton from '../../components/DeviceCard/DeviceSkeleton';
+
 import Search from '../../components/Search/Search';
 import { AxiosProps } from './Axios.props';
 import { PaginationContext } from '../../layout/Show/Show';
@@ -36,7 +36,6 @@ export default function Menu(){
 
         const category = categorySlice.id > 0 ? `idDevice=${categorySlice.id}` : ''
         const search = searchValue ? `title=${searchValue}` : ""
-        console.log(search)
 
           try {
             setIsLoading(true)
@@ -50,7 +49,7 @@ export default function Menu(){
             
             if(e instanceof AxiosError){
                 console.log("произошла ошика при получении данных: " + e.message)
-                // setDataDevice()
+                
             }
         }
     }
@@ -68,7 +67,7 @@ export default function Menu(){
 
             { !isLoading && <MenuList dataDevice={dataDevice}></MenuList>}
             { isLoading && <div className={styles['loading']}> Загружаем девайсы для ваших прекрасных глаз ...</div>}
-            { isLoading && <div className={styles['skeleton']}> {Array(6).fill(0).map( (el, i) => <DeviceSkeleton key={i+el}></DeviceSkeleton>)} </div>}
+            {/* { isLoading && <div className={styles['skeleton']}> {Array(6).fill(0).map( (el, i) => <DeviceSkeleton key={i+el}></DeviceSkeleton>)} </div>} */}
         </div>
     )
 }

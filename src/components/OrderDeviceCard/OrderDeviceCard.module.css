@@ -1,0 +1,179 @@
+
+.line{
+    border: 1px solid rgb(244, 244, 244);
+    margin-bottom: 20px;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+}
+
+.cart:last-child{
+    margin-bottom: 30px
+}
+
+
+.img{
+    height: 80px;
+    width: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+
+
+.container{
+    width: 250px;
+}
+
+.name{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: 1%;
+}
+
+.memory{
+    color: rgb(141, 141, 141);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 1%;
+}
+
+.wrapper{
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: start;
+    -webkit-tap-highlight-color: transparent;
+    margin-right: 5px;
+}
+
+.count{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+
+@media(max-width: 783px){
+
+    .img {
+        height: 200px;
+        width: 200px;
+        min-height: 200px;
+        min-width: 200px;
+        background-position: center;
+    }
+
+    .cart{
+        justify-content: space-between;
+    }
+
+    .box{
+        width: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 5px;
+    }
+
+    .container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .wrapper{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 640px) {
+
+    .img{
+        height: 150px;
+        width: 150px;
+        min-height: 150px;
+        min-width: 150px;
+        background-position: center;
+    }
+
+    .name {
+
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .memory {
+   
+        font-size: 15px;
+
+    }
+
+    .count {
+
+        font-size: 15px;
+
+    }
+
+    .price {
+        font-size: 15px;
+     
+    }
+}
+
+@media(max-width: 344px) {
+
+    .img {
+        height: 100px;
+        width: 100px;
+        min-height: 100px;
+        min-width: 100px;
+        background-position: center;
+    }
+
+    .name {
+
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .memory {
+
+        font-size: 14px;
+
+    }
+
+    .count {
+
+        font-size: 14px;
+
+    }
+
+    .price {
+        font-size: 14px;
+
+    }
+}

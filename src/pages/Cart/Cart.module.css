@@ -29,6 +29,7 @@
 }
 
 .clear{
+    cursor: pointer;
     color: rgb(182, 182, 182);
     font-size: 16px;
     font-weight: 400;
@@ -38,9 +39,14 @@
 
 }
 
+.clear:hover{
+    color: rgb(160, 158, 158);
+}
+
 .info{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .quantity{
@@ -66,6 +72,38 @@
     color: rgb(254, 95, 30);
 }
 
+.doing{
+    display: flex;
+    justify-content: space-around;
+}
+
+.back{
+    cursor: pointer;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 30px;
+    padding: 5px 15px;
+    background-color: rgba(7, 220, 220, 0.533);
+}
+
+.back:hover {
+    background-color: rgb(7, 220, 220);
+}
+
+.pay{
+    cursor: pointer;
+    /* margin-left: auto; */
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 30px;
+    padding: 5px 15px;
+    background-color: rgba(7, 220, 110, 0.437);
+}
+
+.pay:hover {
+    background-color: rgba(7, 220, 110, 0.874);
+}
 
 @media(max-width: 600px){
 

@@ -3,14 +3,16 @@ import styles from './Start.module.css';
 
 export default function Start(){
 
+
    const navigate = useNavigate()
+
 
    const clickStart = () => {
     
     localStorage.setItem('start', 'true')
-    // startTransition( () =>  navigate('/Megazine/show/menu') )
     navigate('/Megazine/show/menu')
-
+    window.scrollTo(0,0)
+     
    }
 
     return (

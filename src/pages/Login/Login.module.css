@@ -1,0 +1,105 @@
+@keyframes changeShadow {
+
+    from {
+        box-shadow: 0px 0px 300px 300px var(--animation-start-box-shadow);
+    }
+
+    to {
+        box-shadow: 0px 0px 400px 430px var(--animation-start-box-shadow);
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    animation: changeShadow 2s alternate infinite;
+    background-color: rgb(218, 201, 201);
+}
+
+.form {
+    /* margin */
+}
+
+
+.custom-input {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.custom-input label {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: rgb(113, 113, 113);
+}
+
+.custom-input input {
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    border-bottom: 4px solid black;
+    font-size: 17px;
+    margin-bottom: 15px;
+    /* background-color: rgb(227, 212, 212); */
+    /* background-color: rgb(242, 229, 229); */
+    /* background-color: rgb(217, 235, 211); */
+    background-color: rgb(224, 251, 215);
+
+}
+
+.custom-input input:focus {
+    border: 1px solid rgb(154, 154, 154);
+    border-bottom: 4px solid rgb(154, 154, 154);
+}
+
+.entrance {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 20px;
+    transition: all .3s ease;
+    margin-bottom: 15px;
+    background-color: rgb(242, 229, 229);
+}
+
+.entrance:hover {
+    background-color: rgb(7, 220, 220);
+}
+
+
+.question {
+    margin: 0 auto;
+}
+
+.link {
+    margin: 0 auto;
+    display: block;
+    color: rgb(72, 167, 198);
+    font-weight: bolder;
+}
+
+.link:hover {
+    color: rgb(217, 235, 211);
+}
+
+@media(max-width: 1050px) {
+    @keyframes changeShadow {
+        from {
+            box-shadow: 0px 0px 900px 170px var(--animation-start-box-shadow);
+        }
+
+        to {
+            box-shadow: 0px 0px 900px 230px var(--animation-start-box-shadow);
+        }
+    }
+}

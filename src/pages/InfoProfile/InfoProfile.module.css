@@ -1,28 +1,17 @@
-@keyframes changeShadow {
-
-    from {
-        box-shadow: 0px 0px 600px 300px var(--animation-start-box-shadow);
-    }
-
-    to {
-        box-shadow: 0px 0px 600px 430px var(--animation-start-box-shadow);
-    }
+.info {
+    display: flex;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(218, 201, 201); */
+    border-radius: 30px;
 }
 
-.login {
-    display: flex;
-    flex-direction: column;
+
+.form{
     max-width: 300px;
     width: 100%;
-    margin: 0 auto;
-    animation: changeShadow 2s alternate infinite;
-    background-color: rgb(218, 201, 201);
 }
-
-.form {
-    /* margin */
-}
-
 
 .custom-input {
     display: flex;
@@ -52,7 +41,7 @@
 
 }
 
-.custom-input input:focus{
+.custom-input input:focus {
     border: 1px solid rgb(154, 154, 154);
     border-bottom: 4px solid rgb(154, 154, 154);
 }
@@ -92,15 +81,10 @@
     color: rgb(217, 235, 211);
 }
 
-@media(max-width: 1050px) {
-    @keyframes changeShadow {
-        from {
-            box-shadow: 0px 0px 900px 170px var(--animation-start-box-shadow);
-        }
-
-        to {
-            box-shadow: 0px 0px 900px 230px var(--animation-start-box-shadow);
-        }
+@media(max-width: 570px) {
+    .info {
+        margin-top: 40px;
+        margin-left: 0px;
     }
 }
 
