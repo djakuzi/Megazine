@@ -1,13 +1,19 @@
-import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Show.module.css';
 import cartIMG from '../../../public/show/cart.svg'
 import logoIMG from '../../../public/show/logo.png'
 import profileIMG from '../../../public/show/profile.svg'
 import cn from 'classnames';
-import { createContext, Suspense, useState } from 'react';
+import { createContext, Suspense, useEffect, useState } from 'react';
 import { Meta } from '../../pages/Menu/Meta.prop';
 import Pagination from '../../components/Pagination/Pagination';
 import { PaginationContextProps} from './PaginationContext.props';
+import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux';
+import { CartDeviceCardProps } from '../../components/CartCard/CartDeviceCard.props';
+import { DeviceCardProps } from '../../components/DeviceCard/DeviceCard.props';
+import PREFIX from '../../helper/PREFIX';
+import { RootState, AppDispatch } from '../../redux/store';
 
 const startContext = {
     currentPage: 0,
@@ -27,6 +33,45 @@ export default function Show(){
      }
 
      const location = useLocation().pathname == '/Megazine/show/menu'
+
+
+    //  решение не самое лучшее, потому что стоило бы сделать все через redux
+
+    const cartArr = useSelector((s:RootState) => s.cart.cartDevices)    
+    const [cartDevices, setCartDevices] = useState<{memory: string, price: number, count: number}[]>([])
+    // const idUser = useSelector((s:RootState) => s.user.profile?.id)
+
+    const calculator = cartDevices.reduce( (sum, el) => {
+        sum.quantity += 1
+        sum.price += el.price * el.count
+
+        return sum
+    },{quantity: 0, price: 0}) // калькулятор который считает общее количсетво денег и количество девайсов
+
+
+    useEffect( () => {
+        loadAllCartDevices() 
+    },[cartArr])
+
+    const getInfoDevice = async (id: number, memory: string, count: number) => {
+
+        const {data} = await axios.get<DeviceCardProps>(PREFIX + '/device/' + id)
+        // console.log(data)
+        data
+        return {
+            memory: memory,
+            count: count,
+            price: data.memoryPrice.filter( el => el.memory == memory)[0].price,
+        }
+        
+    }
+
+    const loadAllCartDevices = async() => {
+
+        const allCartDevice = await Promise.all(cartArr.map(el => getInfoDevice(el.id, el.memory, el.count)))
+
+        setCartDevices(allCartDevice)
+    }
 
     return (
         <div className={styles.wrapper}>
@@ -60,11 +105,11 @@ export default function Show(){
                                 [styles.active]: isActive,
                             })} to="/Megazine/show/cart">
 
-                            <div className={styles['price']}>520 ₽</div>
+                            <div className={styles['price']}>{calculator.price}₽</div>
                             <div className={styles['line']}></div>
                             <div className={styles['box-items']}>
                                 <img src={cartIMG} alt="иконка корзины" />
-                                <div className={styles['q']}>0</div>
+                                <div className={styles['q']}>{calculator.quantity}</div>
                             </div>
                         </NavLink>
                     </div>

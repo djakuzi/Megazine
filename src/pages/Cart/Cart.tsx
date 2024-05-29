@@ -19,6 +19,8 @@ export default function Cart(){
     const cartArr = useSelector((s:RootState) => s.cart.cartDevices)
     const [cartDevices, setCartDevices] = useState<CartDeviceCardProps[]>([])
     const idUser = useSelector((s:RootState) => s.user.profile?.id)
+
+    const [ready, setReady] = useState<boolean>(false)
     // const idUser = useSelector((s:RootState) => s.user.profile?.id)
     const navigate = useNavigate()
     
@@ -80,6 +82,12 @@ export default function Cart(){
             }
         }))
 
+        
+
+        dispatch(cartActions.clear())
+        setReady(true)
+        
+
     }
 
     return(
@@ -93,13 +101,16 @@ export default function Cart(){
                     <div className={styles['clear']} onClick={()=> dispatch(cartActions.clear())}>очистить корзину</div>
                 </div>
             </div>
+
+            {ready && <div className={styles['ready']}>Заказ оформлен &#128525;</div>}
             
             <CartList cartDevices={cartDevices}></CartList>
 
-            <div  className={styles['info']}>
+            <div className={styles['info']}>
                 <div className={styles['quantity']}>Всего девайсов <span> {calculator.quantity}&nbsp;шт.</span></div>
                 <div className={styles['sum']}>Cумма заказа: <span>{calculator.price}&nbsp;₽</span></div>
             </div>
+
 
             <div className={styles.doing}>
                 <div className={styles.back} onClick={()=> navigate('/Megazine/show/menu')}>Назад</div>

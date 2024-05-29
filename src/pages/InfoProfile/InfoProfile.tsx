@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { axiosChangeProfile } from '../../redux/slices/user.slice';
 import { AppDispatch, RootState } from '../../redux/store';
@@ -22,8 +23,10 @@ export function InfoProfile(){
     const emailUser = useSelector( (s:RootState) => s.user.profile?.email)
     const idUser = useSelector( (s:RootState) => s.user.profile?.id)
 
+    const navigate = useNavigate()
+
     useEffect(()=>{
-        
+         
     },[nameUser, emailUser])
 
     const clickSubmit = (e: React.FormEvent<HTMLFormElement>)=>{
@@ -45,10 +48,15 @@ export function InfoProfile(){
         }
 
         sendData(param)
+        form.user.value = ''
+        form.email.value = ''
+        form.password.value = ''
+        
     }
 
-    const sendData = async (param:ChangeUserParam) => {
-         dispatch(axiosChangeProfile(param))
+    const sendData = (param:ChangeUserParam) => {
+          dispatch(axiosChangeProfile(param))
+        
     }
 
 

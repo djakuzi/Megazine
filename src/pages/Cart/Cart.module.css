@@ -43,6 +43,13 @@
     color: rgb(160, 158, 158);
 }
 
+.ready{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 60px 0px;
+}
+
 .info{
     display: flex;
     justify-content: space-between;

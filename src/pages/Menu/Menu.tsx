@@ -16,8 +16,6 @@ import { RootState } from '../../redux/store';
 export default function Menu(){
 
     const {currentPage, setMetaDevice} = useContext(PaginationContext) // // контекст содержащий данные о страницах и переход на страницу
-
-
     
     const {...categorySlice} = useSelector( (s:RootState) => s.category) // слайс для отображения выбрапнной категории
     
@@ -26,7 +24,7 @@ export default function Menu(){
  
     const [searchValue, setSearchValue] = useState<string | undefined>('') // данные для поиска из инпута
 
-
+console.log(searchValue)
     useEffect( () => {
 
       getMenu()
@@ -36,6 +34,7 @@ export default function Menu(){
 
         const category = categorySlice.id > 0 ? `idDevice=${categorySlice.id}` : ''
         const search = searchValue ? `title=${searchValue}` : ""
+     
 
           try {
             setIsLoading(true)
