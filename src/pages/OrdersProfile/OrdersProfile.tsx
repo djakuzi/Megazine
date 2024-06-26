@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { OrderList } from '../../components/OrderList/OrderList';
-import { Order } from '../../redux/slices/user.slice';
+
 import { RootState } from '../../redux/store';
 import styles from './OrdersProfile.module.css';
 

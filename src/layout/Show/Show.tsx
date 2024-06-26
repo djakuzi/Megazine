@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation} from 'react-router-dom';
 import styles from './Show.module.css';
 import cartIMG from '../../../public/show/cart.svg'
 import logoIMG from '../../../public/show/logo.png'
@@ -9,11 +9,11 @@ import { Meta } from '../../pages/Menu/Meta.prop';
 import Pagination from '../../components/Pagination/Pagination';
 import { PaginationContextProps} from './PaginationContext.props';
 import axios from 'axios';
-import { useSelector, useDispatch } from 'react-redux';
-import { CartDeviceCardProps } from '../../components/CartCard/CartDeviceCard.props';
+import { useSelector} from 'react-redux';
+
 import { DeviceCardProps } from '../../components/DeviceCard/DeviceCard.props';
 import PREFIX from '../../helper/PREFIX';
-import { RootState, AppDispatch } from '../../redux/store';
+import { RootState} from '../../redux/store';
 
 const startContext = {
     currentPage: 0,

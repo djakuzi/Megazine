@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+
 
 import { axiosChangeProfile } from '../../redux/slices/user.slice';
 import { AppDispatch, RootState } from '../../redux/store';
@@ -23,7 +23,7 @@ export function InfoProfile(){
     const emailUser = useSelector( (s:RootState) => s.user.profile?.email)
     const idUser = useSelector( (s:RootState) => s.user.profile?.id)
 
-    const navigate = useNavigate()
+
 
     useEffect(()=>{
          

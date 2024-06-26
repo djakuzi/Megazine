@@ -16,6 +16,7 @@
     width: 100%;
     margin: 0 auto;
     animation: changeShadow 2s alternate infinite;
+    border-radius: 50%;
     background-color: rgb(218, 201, 201);
 }
 
@@ -102,4 +103,15 @@
             box-shadow: 0px 0px 900px 230px var(--animation-start-box-shadow);
         }
     }
+
+    .login{
+        background-color: rgba(255, 255, 255, 0);
+        animation: none;
+        border-radius: none;
+    }
+
+    .custom-input label{
+        color: black;
+    }
+
 }
