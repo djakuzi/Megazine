@@ -10,7 +10,7 @@ export default function Start(){
    const clickStart = () => {
     
     localStorage.setItem('start', 'true')
-    navigate('/Megazine/show/menu')
+    navigate('/show/menu')
     window.scrollTo(0,0)
      
    }

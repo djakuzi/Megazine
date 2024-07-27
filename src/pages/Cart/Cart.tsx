@@ -82,11 +82,8 @@ export default function Cart(){
             }
         }))
 
-        
-
         dispatch(cartActions.clear())
         setReady(true)
-        
 
     }
 
@@ -113,7 +110,7 @@ export default function Cart(){
 
 
             <div className={styles.doing}>
-                <div className={styles.back} onClick={()=> navigate('/Megazine/show/menu')}>Назад</div>
+                <div className={styles.back} onClick={()=> navigate('/show/menu')}>Назад</div>
                 <button className={styles.pay} disabled={calculator.price == 0} onClick={()=> clickPay()}> Заказать</button>
             </div>
         </div>

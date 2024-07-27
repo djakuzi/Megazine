@@ -6,7 +6,22 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
     <title>DeviceTop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Megazine/assets/index-KBBg-Aam.js"></script>
+    <script type="text/javascript">
+
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }
+        (window.location))
+
+    </script>
+    <script type="module" crossorigin src="/Megazine/assets/index-DMlZgOD1.js"></script>
     <link rel="stylesheet" crossorigin href="/Megazine/assets/index-C1s3fnHy.css">
   </head>
   <body>

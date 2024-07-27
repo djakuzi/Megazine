@@ -6,7 +6,6 @@
 
 .category{
     display: flex;
-    align-items: center;
     padding: 3px;
     gap: 8px;
     overflow: scroll;

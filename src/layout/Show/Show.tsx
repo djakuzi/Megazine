@@ -32,7 +32,7 @@ export default function Show(){
         setMetaDevice
      }
 
-     const location = useLocation().pathname == '/Megazine/show/menu'
+     const location = useLocation().pathname == '/show/menu'
 
 
     //  решение не самое лучшее, потому что стоило бы сделать все через redux
@@ -81,7 +81,7 @@ export default function Show(){
 
                     <div className={styles['header']}>
                         
-                        <Link className={styles["header__link"]} to={'/Megazine/show/menu'}>
+                        <Link className={styles["header__link"]} to={'/show/menu'}>
 
                             <div className={styles['logo']}>
                                 <img  src={logoIMG} alt="лого" />
@@ -97,13 +97,13 @@ export default function Show(){
 
                         <NavLink className={ ({isActive}) => cn(styles['profile-icon'],{
                                 [styles.active]: isActive,
-                            })} to="/Megazine/show/profile">
+                            })} to="/show/profile">
                             <img src={profileIMG} alt="" />
                         </NavLink>
 
                          <NavLink className={ ({isActive}) => cn(styles['cart__link'],{
                                 [styles.active]: isActive,
-                            })} to="/Megazine/show/cart">
+                            })} to="/show/cart">
 
                             <div className={styles['price']}>{calculator.price}₽</div>
                             <div className={styles['line']}></div>

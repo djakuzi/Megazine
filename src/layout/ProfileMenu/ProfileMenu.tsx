@@ -13,12 +13,12 @@ export function ProfileMenu(){
 
 
     useEffect( ()=>{
-      navigate("/Megazine/show/profile/infoProfile")
+      navigate("/show/profile/infoProfile")
     },[])
 
     const clickExit = () =>{
         dispatch(userActions.logOut())
-        navigate('/Megazine/auth/login')
+        navigate('/auth/login')
         localStorage.setItem('start', '')
     }
     
@@ -28,13 +28,13 @@ export function ProfileMenu(){
             <div className={styles.menu}>
                 <NavLink className={ ({isActive}) => cn(styles['link'],{
                         [styles.active]: isActive,
-                    })} to="/Megazine/show/profile/infoProfile">
+                    })} to="/show/profile/infoProfile">
                     Профиль
                 </NavLink>
 
                 <NavLink className={ ({isActive}) => cn(styles['link'],{
                         [styles.active]: isActive,
-                    })} to="/Megazine/show/profile/orders">
+                    })} to="/show/profile/orders">
                     Заказы
                 </NavLink>
 

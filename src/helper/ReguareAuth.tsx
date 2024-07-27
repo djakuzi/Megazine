@@ -10,7 +10,7 @@ export default function ReguareAuth({children}:{children: ReactNode}){
     const jwt = useSelector( (s:RootState) => s.user.token)
 
         if(!jwt){
-            return <Navigate to="/Megazine/auth/login" replace></Navigate>
+            return <Navigate to="/auth/login" replace></Navigate>
     }
     
 

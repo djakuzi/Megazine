@@ -23,8 +23,6 @@ export function InfoProfile(){
     const emailUser = useSelector( (s:RootState) => s.user.profile?.email)
     const idUser = useSelector( (s:RootState) => s.user.profile?.id)
 
-
-
     useEffect(()=>{
          
     },[nameUser, emailUser])
@@ -35,7 +33,6 @@ export function InfoProfile(){
         const form = e.currentTarget
         const password = form.password.value
     
-
         let param: ChangeUserParam = {
             id: idUser as number,
             email: (form.email.value) ? form.email.value : emailUser,

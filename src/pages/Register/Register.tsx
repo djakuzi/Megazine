@@ -15,7 +15,7 @@ export default function Register(){
     const navigate = useNavigate()
 
     useEffect( () =>{
-        if(token) navigate('/Megazine/show/menu')
+        if(token) navigate('/show/menu')
     }, [token, navigate])
 
 
@@ -64,7 +64,7 @@ export default function Register(){
             </form>
 
              <div className={styles.question}>Есть аккаунт?</div>                
-            <Link className={styles.link} to={'/Megazine/auth/login'} >Войти</Link>
+            <Link className={styles.link} to={'/auth/login'} >Войти</Link>
         </div>
     )
 }

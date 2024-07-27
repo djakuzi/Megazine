@@ -6,7 +6,7 @@ import backgroundIMG from '../../../public/megazine/background.png'
 export default function Megazine(){
 
     const navigate = useNavigate()
-
+    let path = window.location.pathname 
     useEffect( () =>{
         checkedStart()
     }, [])
@@ -16,10 +16,10 @@ export default function Megazine(){
         const data = localStorage.getItem('start')
 
         if (!data) {
-            navigate('/Megazine/start')
-        } else if (data)(
-            navigate('/Megazine/show/menu')
-        )
+            navigate('/start')
+        } else if(path == '/Megazine/show/menu' || path.length <= 10){
+            navigate('/show/menu')
+        }
     }
 
     return (

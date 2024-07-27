@@ -15,7 +15,7 @@ export default function Login(){
     const navigate = useNavigate()
 
     useEffect( () =>{
-        if(token) navigate('/Megazine/show/menu')
+        if(token) navigate('/show/menu')
     }, [token, navigate])
     
     const clickSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -52,7 +52,7 @@ export default function Login(){
             </form>
 
              <div className={styles.question}>Нет аккаунта?</div>                
-            <Link className={styles.link} to={'/Megazine/auth/register'} >Зарегестрироваться</Link>
+            <Link className={styles.link} to={'/auth/register'} >Зарегестрироваться</Link>
         </div>
     )
 }

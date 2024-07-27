@@ -18,10 +18,9 @@ import { OrdersProfile } from './pages/OrdersProfile/OrdersProfile';
 
 const Menu = lazy( ()=>import('./pages/Menu/Menu'))
 const Cart = lazy( ()=>import('./pages/Cart/Cart'))
-
-const Router = createBrowserRouter([
+const routes = [
   {
-    path: '/Megazine',
+    path: '/',
     element: <Megazine/>,
      children: [
       {
@@ -78,8 +77,11 @@ const Router = createBrowserRouter([
     path: "*",
     element: <>Произошла ошибка{'((('}</>,
   }
+]
 
-]); 
+const Router = createBrowserRouter(routes, {
+  basename: '/Megazine'
+}); 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

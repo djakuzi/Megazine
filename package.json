@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://djakuzi.github.io/Megazine/",
   "scripts": {
     "test": "concurrently \"npm run server\" \"npm run dev\"",
     "dev": "vite",
